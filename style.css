@@ -1,0 +1,667 @@
+
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #D9D9D9;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Estilo do header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Alinha o logo e o texto verticalmente */
+}
+
+.logo img {
+  width: 45px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.logo h1 {
+  font-size: 24px;
+  color: #FFD700;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #FFD700;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+.cta-button {
+  background-color: #FFD700;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #FFC107;
+  color: #fff;
+}
+
+/* Responsividade para o header */
+@media (max-width: 768px) {
+  .main-header {
+    padding: 10px 20px;
+    justify-content: center; /* Centraliza logo e título */
+  }
+
+  /* Esconde a navegação e o botão CTA */
+  nav ul {
+    display: none;
+  }
+
+  .cta-button {
+    display: none;
+  }
+}
+
+
+/* Seção Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 150px 50px 100px;
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero-content h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #FFD700;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.hero-image img {
+  width: 850px;
+  height: auto;
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(20%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsividade para a seção Hero */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 100px 20px; /* Reduz o padding */
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center; /* Centraliza os textos */
+  }
+
+  .hero-content h2 {
+    font-size: 32px; /* Ajusta o tamanho do título para telas menores */
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  /* Esconde a imagem do Hero */
+  .hero-image {
+    display: none;
+  }
+}
+
+/* Seção de Diferenciais */
+.features {
+  background-color: #1C1C1C;
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-item {
+  background-color: #333;
+  padding: 40px 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+}
+
+.feature-item img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.feature-item h3 {
+  font-size: 24px;
+  color: #FFD700;
+}
+
+.feature-item p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+/* Seção Sobre */
+.about {
+  padding: 80px 50px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Seção Mídia */
+.media {
+  padding: 80px 50px;
+  background-color: #1C1C1C;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.media-item img{
+  width: 100%;
+  max-width: 253px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.media-item video {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.media-item img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+
+
+/* Seção Depoimentos */
+.testimonials {
+  padding: 80px 50px;
+  background-color: #000;
+}
+
+.testimonials h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #ccc;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.testimonial-item {
+  background-color: #1C1C1C;
+  padding: 40px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-item:hover {
+  transform: scale(1.05);
+}
+
+/* Seção FAQ */
+.faq {
+  padding: 80px 50px;
+  background-color: #1C1C1C;
+}
+
+.faq-answer {
+  display: none; /* Esconde as respostas por padrão */
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-item.active .faq-answer {
+  display: block; /* Mostra a resposta quando o item está ativo */
+}
+
+.faq h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  font-size: 24px;
+  color: #FFD700;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+.faq-item h3:hover {
+  color: #fff; /* Altera a cor ao passar o mouse */
+}
+
+
+/* Seção Download */
+
+
+.download {
+  padding: 80px 50px;
+  background-color: #FFD700;
+  text-align: center;
+  color: #000;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.download-button {
+  background-color: #000;
+  color: #FFD700;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #333;
+  color: #FFD700;
+}
+
+.resources {
+  padding: 80px 50px;
+  background-color: #1C1C1C;
+  text-align: center;
+}
+
+.resources h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #FFD700;
+}
+
+.resources ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resources ul li {
+  font-size: 18px;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.resources ul li::before {
+  content: "✔";
+  color: #FFD700;
+  margin-right: 10px;
+}
+
+.blog {
+  padding: 80px 50px;
+  background-color: #000;
+}
+
+.blog h2 {
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blog-post {
+  background-color: #1C1C1C;
+  padding: 40px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+  transform: scale(1.05);
+}
+
+.blog-post h3 {
+  font-size: 24px;
+  color: #FFD700;
+}
+
+.blog-post p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.blog-post a {
+  background-color: #FFD700;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blog-post a:hover {
+  background-color: #FFC107;
+  color: #fff;
+}
+
+.contact {
+  padding: 80px 50px;
+  background-color: #1C1C1C;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  color: #FFD700;
+  margin-bottom: 30px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact input {
+  background-color: #333;
+  color: #fff;
+}
+
+.contact textarea {
+  background-color: #333;
+  color: #fff;
+  height: 150px;
+}
+
+.contact button {
+  background-color: #FFD700;
+  color: #000;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #FFC107;
+  color: #fff;
+}
+
+
+/* Footer */
+footer {
+  background-color: #000;
+  padding: 40px 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.footer-section h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #FFD700;
+}
+
+.footer-section a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section ul li a {
+  color: #FFD700;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+/* Redes Sociais */
+.footer-section.social a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #FFD700;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+/* Botão Flutuante */
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  background-color: #FFD700;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+#back-to-top:hover {
+  background-color: #FFC107;
+}
+
+#back-to-top img {
+  width: 30px;
+}
+
+/* Mostrar o botão ao rolar */
+.show-back-to-top {
+  display: block;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .resources, .blog, .contact {
+    padding: 50px 20px;
+  }
+  .resources h2, .blog h2, .contact h2 {
+    font-size: 28px;
+  }
+
+  .contact input, .contact textarea {
+    font-size: 14px;
+  }
+
+  .cta-button, .download-button {
+    padding: 8px 15px;
+  }
+  .hero-content p {
+    font-size: 16px;
+  }
+  .hero-image img {
+    width: 350px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cta-button {
+    padding: 8px 15px;
+  }
+
+  .download-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Inicialmente, as seções estão ocultas */
+.features,
+.about,
+.media,
+.testimonials,
+.faq,
+.download {
+  opacity: 0;
+  transform: translateY(20px); /* Move um pouco para baixo */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Quando a classe "show" é adicionada, a seção é exibida */
+.features.show,
+.about.show,
+.media.show,
+.testimonials.show,
+.faq.show,
+.download.show {
+  opacity: 1; /* Visível */
+  transform: translateY(0); /* Move para a posição original */
+}
