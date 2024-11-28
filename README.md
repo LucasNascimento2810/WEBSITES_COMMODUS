@@ -1,4 +1,4 @@
-OMMODUS - Website 🚗💰
+COMMODUS - Website 🚗💰
 COMMODUS é o site oficial do aplicativo de gestão de gastos para veículos, desenvolvido para apresentar as funcionalidades e benefícios do app de forma clara e moderna.
 
 O site foi desenvolvido utilizando tecnologias simples, mas eficientes, como HTML, CSS e JavaScript, focando em uma experiência visual agradável e responsiva.
