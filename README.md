@@ -1,22 +1,38 @@
-COMMODUS - Website 🚗💰
-COMMODUS é o site oficial do aplicativo de gestão de gastos para veículos, desenvolvido para apresentar as funcionalidades e benefícios do app de forma clara e moderna.
+🚗💰 COMMODUS - Website
+COMMODUS é o site oficial do aplicativo de gestão de gastos para veículos, desenvolvido com o objetivo de apresentar as funcionalidades e benefícios do app de forma clara, moderna e acessível.
 
-O site foi desenvolvido utilizando tecnologias simples, mas eficientes, como HTML, CSS e JavaScript, focando em uma experiência visual agradável e responsiva.
+Este projeto foi construído com tecnologias simples, porém eficientes, focando em uma experiência visual agradável, responsiva e interativa.
 
-🛠 Tecnologias utilizadas
-HTML5: Estruturação do conteúdo.
-CSS3: Estilização e design responsivo.
-JavaScript (JS): Funcionalidades interativas, como animações, FAQ expansível e navegação dinâmica.
-🌟 Funcionalidades do site
-Página inicial (Home): Apresentação geral do aplicativo, com destaque para seus diferenciais.
-Seções dinâmicas:
-Sobre o app.
-FAQ interativo.
-Destaques do app, como vídeos e imagens.
-Footer aprimorado:
-Contatos (e-mail e redes sociais com ícones clicáveis).
-Botão flutuante para voltar ao topo da página.
-Design responsivo:
-Compatível com dispositivos móveis, tablets e desktops.
-Animações suaves:
-Efeitos visuais modernos para melhorar a experiência do usuário.
+🛠 Tecnologias Utilizadas
+🔹 HTML5: Estruturação semântica e organizada do conteúdo
+
+🔹 CSS3: Estilização avançada e design responsivo
+
+🔹 JavaScript (JS): Funcionalidades interativas, como animações, navegação dinâmica e FAQ expansível
+
+🌟 Funcionalidades do Site
+📄 Página Inicial
+Apresentação geral do aplicativo
+
+Destaque para os diferenciais do COMMODUS
+
+🧩 Seções Dinâmicas
+📱 Sobre o App: Descrição das principais funcionalidades
+
+❓ FAQ Interativo: Perguntas frequentes com expansão animada
+
+📸 Destaques Visuais: Vídeos e imagens do aplicativo em ação
+
+📬 Footer Aprimorado
+Contatos via e-mail e redes sociais com ícones clicáveis
+
+Botão flutuante de “Voltar ao Topo”
+
+📱 Design Responsivo
+Totalmente compatível com dispositivos móveis, tablets e desktops
+
+✨ Animações Suaves
+Efeitos visuais modernos que melhoram a experiência do usuário
+
+📌 Objetivo do Projeto
+Criar uma landing page profissional para divulgação do aplicativo COMMODUS, reforçando sua identidade visual e funcionalidades, além de demonstrar habilidades com desenvolvimento front-end moderno.
